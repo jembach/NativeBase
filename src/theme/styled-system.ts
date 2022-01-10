@@ -587,6 +587,7 @@ const convertStringNumberToNumber = (key: string, value: string) => {
   if (
     typeof value === 'string' &&
     key !== 'fontWeight' &&
+    value !== 'auto' &&
     value &&
     !isNaN(Number(value))
   ) {
